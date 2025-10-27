@@ -6,4 +6,4 @@ function addition(a, b) {
 
 addition(4, 5);
 
-console.log("Testing multi-paragraph commit message")
+console.log("Testing multi-paragraph commit message");
