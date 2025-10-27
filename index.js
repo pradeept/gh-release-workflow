@@ -1,8 +1,7 @@
-    console.log("Hello World")
-
-let a = 1
+console.log("Hello World");
 
 function addition(a, b) {
-    return a + b;}
+  return a + b;
+}
 
-addition(4, 5)
+addition(4, 5);
