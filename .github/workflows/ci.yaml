@@ -5,6 +5,8 @@ on:
   #   branches:
   #     - main
   pull_request:
+    branches: 
+      - main
 
 jobs:
   build:
@@ -17,3 +19,8 @@ jobs:
         run: npm run lint
       - name: Format the code
         run: npm run format
+  release:
+    needs: [build]
+    # if: ${{github.event.}}
+    uses: pradeept/gh-release-workflow/.github/workflows/release.yaml@main
+       
